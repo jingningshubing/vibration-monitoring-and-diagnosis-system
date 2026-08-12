@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: vibration-monitoring-service
+  datasource:
+    url: ${VIBRATION_DB_URL:jdbc:mysql://localhost:3306/vibration_monitoring?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai}
+    username: ${VIBRATION_DB_USERNAME:root}
+    password: ${VIBRATION_DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  level:
+    com.cq.vibration: INFO
+
+vibration:
+  replay:
+    enabled: true
+    catch-up-enabled: false
+    catch-up-start-time: '2026-08-01T00:00:00' # 数据库为空且开启补齐时使用，例如 2026-07-01T00:00:00

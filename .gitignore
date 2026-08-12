@@ -1,0 +1,17 @@
+vibration-monitoring-web/node_modules/
+vibration-monitoring-web/dist/
+vibration-monitoring-service/target/
+vibration-monitoring-service/data/
+vibration-monitoring-service/ml/python-packages/
+vibration-monitoring-service/ml/artifacts/
+vibration-monitoring-service/ml/__pycache__/
+感应电机在不同负载条件下的三轴轴承振动数据集/
+*.log
+.env
+application-local.yml
+*.onnx
+*.py[cod]
+.idea/
+.vscode/
+净化厂生产工艺流程图.svg
+新建文本文档.html
